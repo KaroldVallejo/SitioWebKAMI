@@ -2,31 +2,35 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Contacto</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto - KAMI</title>
+<link rel="stylesheet" href="Style.css">
 </head>
 <body>
 
+<header>
 <h1>Contacto</h1>
-
 <nav>
-<a href="PaginaPrincipal.html">Inicio</a> |
-<a href="Acerca.html">Acerca de</a> |
-<a href="Servicios.html">Productos</a> |
+<a href="PaginaPrincipal.html">Inicio</a>
+<a href="Acerca.html">Acerca de</a>
+<a href="Servicios.html">Productos</a>
 <a href="Contacto.html">Contacto</a>
 </nav>
+</header>
 
-<form>
-<label>Nombre:</label><br>
-<input type="text"><br><br>
-
-<label>Correo:</label><br>
-<input type="email"><br><br>
-
-<label>Mensaje:</label><br>
-<textarea rows="4"></textarea><br><br>
-
-<button>Enviar</button>
+<section>
+<h2>Envíanos un mensaje</h2>
+<form onsubmit="alert('Tu mensaje ha sido enviado. Te contactaremos pronto.'); return false;">
+<input type="text" placeholder="Tu nombre" required>
+<input type="email" placeholder="Tu correo" required>
+<textarea placeholder="Escribe tu mensaje" rows="5" required></textarea>
+<button type="submit">Enviar</button>
 </form>
+</section>
+
+<footer>
+© 2025 SitioWebKAMI — Todos los derechos reservados.
+</footer>
 
 </body>
 </html>
